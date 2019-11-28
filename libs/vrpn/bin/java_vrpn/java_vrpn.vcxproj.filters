@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\java_vrpn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AnalogOutputRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AnalogRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AuxiliaryLoggerRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_ButtonRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_ForceDeviceRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_PoserRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TextReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TextSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TrackerRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_VRPNDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_FunctionGeneratorRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\b790c101ef2df77c1743f885d2b9bf99\AnalogOutputRemote.class.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogOutputRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogRemoteListener.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AuxiliaryLoggerRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ButtonRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ButtonRemoteListener.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ForceDeviceRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ForceDeviceRemoteListener.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_FunctionGeneratorRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_PoserRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TextReceiver.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TextSender.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TrackerRemote.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TrackerRemoteListener.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_VRPN.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_VRPNDevice.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2DFC1456-3E5C-3CFC-8950-949CA841DEE9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B2F598E5-B4F5-38B2-8B28-0B18FF77C008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1D7D029-8A85-36FB-A5AF-52F8FAFE2BE2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

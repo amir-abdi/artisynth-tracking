@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\810f069c0789f827ba37d1d26dd5db71\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2DFC1456-3E5C-3CFC-8950-949CA841DEE9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

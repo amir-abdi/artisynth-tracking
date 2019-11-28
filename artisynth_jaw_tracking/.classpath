@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="artisynth_jaw_tracking/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/artisynth_core"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/artisynth_models"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="lib/vrpn.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

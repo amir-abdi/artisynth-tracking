@@ -1,0 +1,1326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{077E4A57-3A42-3B28-99B9-1AD418FC691C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>java_vrpn</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">java_vrpn.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">java_vrpnd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">java_vrpn.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">java_vrpn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">java_vrpn.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">java_vrpn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">java_vrpn.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">java_vrpn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE="C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h";CMAKE_INTDIR="Debug";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE=\"C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h\";CMAKE_INTDIR=\"Debug\";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Debug\vrpnserverd.lib;C:\Program Files\Java\jdk1.8.0_171\lib\jvm.lib;..\quat\Debug\quatd.lib;ws2_32.lib;winmm.lib;..\gpsnmealib\Debug\gpsnmead.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/Debug/java_vrpnd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/Debug/java_vrpnd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE="C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h";CMAKE_INTDIR="Release";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE=\"C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h\";CMAKE_INTDIR=\"Release\";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Release\vrpnserver.lib;C:\Program Files\Java\jdk1.8.0_171\lib\jvm.lib;..\quat\Release\quat.lib;ws2_32.lib;winmm.lib;..\gpsnmealib\Release\gpsnmea.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/Release/java_vrpn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/Release/java_vrpn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE="C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h";CMAKE_INTDIR="MinSizeRel";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE=\"C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h\";CMAKE_INTDIR=\"MinSizeRel\";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\MinSizeRel\vrpnserver.lib;C:\Program Files\Java\jdk1.8.0_171\lib\jvm.lib;..\quat\MinSizeRel\quat.lib;ws2_32.lib;winmm.lib;..\gpsnmealib\MinSizeRel\gpsnmea.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/MinSizeRel/java_vrpn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/MinSizeRel/java_vrpn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE="C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h";CMAKE_INTDIR="RelWithDebInfo";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0600;NTDDI_VERSION=0x06000000;VRPN_USING_CMAKE=\"C:/gitRepository/jaw-tracking/libs/vrpn/bin/vrpn_Configure.h\";CMAKE_INTDIR=\"RelWithDebInfo\";java_vrpn_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\gitRepository\jaw-tracking\libs\vrpn\bin;C:\gitRepository\jaw-tracking\libs\vrpn;C:\gitRepository\jaw-tracking\libs\vrpn\atmellib;C:\gitRepository\jaw-tracking\libs\vrpn\quat;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn;C:\Program Files\Java\jdk1.8.0_171\include;C:\Program Files\Java\jdk1.8.0_171\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\RelWithDebInfo\vrpnserver.lib;C:\Program Files\Java\jdk1.8.0_171\lib\jvm.lib;..\quat\RelWithDebInfo\quat.lib;ws2_32.lib;winmm.lib;..\gpsnmealib\RelWithDebInfo\gpsnmea.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/RelWithDebInfo/java_vrpn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/RelWithDebInfo/java_vrpn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\b790c101ef2df77c1743f885d2b9bf99\AnalogOutputRemote.class.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling Java sources to class files...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javac.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogOutputRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AuxiliaryLoggerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/FunctionGeneratorRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/PoserRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextReceiver.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextSender.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPN.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPNDevice.java
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/b790c101ef2df77c1743f885d2b9bf99/AnalogOutputRemote.class.rule;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogOutputRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AuxiliaryLoggerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\FunctionGeneratorRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\PoserRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextReceiver.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextSender.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPN.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPNDevice.java;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling Java sources to class files...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javac.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogOutputRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AuxiliaryLoggerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/FunctionGeneratorRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/PoserRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextReceiver.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextSender.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPN.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPNDevice.java
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/b790c101ef2df77c1743f885d2b9bf99/AnalogOutputRemote.class.rule;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogOutputRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AuxiliaryLoggerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\FunctionGeneratorRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\PoserRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextReceiver.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextSender.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPN.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPNDevice.java;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Compiling Java sources to class files...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javac.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogOutputRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AuxiliaryLoggerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/FunctionGeneratorRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/PoserRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextReceiver.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextSender.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPN.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPNDevice.java
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/b790c101ef2df77c1743f885d2b9bf99/AnalogOutputRemote.class.rule;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogOutputRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AuxiliaryLoggerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\FunctionGeneratorRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\PoserRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextReceiver.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextSender.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPN.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPNDevice.java;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Compiling Java sources to class files...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javac.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogOutputRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AnalogRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/AuxiliaryLoggerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ButtonRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/ForceDeviceRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/FunctionGeneratorRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/PoserRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextReceiver.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TextSender.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemote.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/TrackerRemoteListener.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPN.java C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/vrpn/VRPNDevice.java
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/b790c101ef2df77c1743f885d2b9bf99/AnalogOutputRemote.class.rule;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogOutputRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AnalogRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\AuxiliaryLoggerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ButtonRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\ForceDeviceRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\FunctionGeneratorRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\PoserRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextReceiver.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TextSender.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemote.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\TrackerRemoteListener.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPN.java;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn\VRPNDevice.java;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogOutputRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.AnalogOutputRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogOutputRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogOutputRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.AnalogOutputRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogOutputRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogOutputRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.AnalogOutputRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogOutputRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogOutputRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.AnalogOutputRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogOutputRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogOutputRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogOutputRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.AnalogRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.AnalogRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.AnalogRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.AnalogRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AnalogRemoteListener.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.AnalogRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.AnalogRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.AnalogRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.AnalogRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AnalogRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AnalogRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AnalogRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_AuxiliaryLoggerRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.AuxiliaryLoggerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AuxiliaryLoggerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AuxiliaryLoggerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.AuxiliaryLoggerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AuxiliaryLoggerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AuxiliaryLoggerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.AuxiliaryLoggerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AuxiliaryLoggerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AuxiliaryLoggerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.AuxiliaryLoggerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.AuxiliaryLoggerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_AuxiliaryLoggerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\AuxiliaryLoggerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ButtonRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.ButtonRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.ButtonRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.ButtonRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.ButtonRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ButtonRemoteListener.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.ButtonRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.ButtonRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.ButtonRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.ButtonRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ButtonRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ButtonRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ButtonRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ForceDeviceRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.ForceDeviceRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.ForceDeviceRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.ForceDeviceRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.ForceDeviceRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_ForceDeviceRemoteListener.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.ForceDeviceRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.ForceDeviceRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.ForceDeviceRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.ForceDeviceRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.ForceDeviceRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_ForceDeviceRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\ForceDeviceRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_FunctionGeneratorRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.FunctionGeneratorRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.FunctionGeneratorRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_FunctionGeneratorRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.FunctionGeneratorRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.FunctionGeneratorRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_FunctionGeneratorRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.FunctionGeneratorRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.FunctionGeneratorRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_FunctionGeneratorRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.FunctionGeneratorRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.FunctionGeneratorRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_FunctionGeneratorRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\FunctionGeneratorRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_PoserRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.PoserRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.PoserRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_PoserRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.PoserRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.PoserRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_PoserRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.PoserRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.PoserRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_PoserRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.PoserRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.PoserRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_PoserRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\PoserRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TextReceiver.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.TextReceiver</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextReceiver
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextReceiver.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.TextReceiver</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextReceiver
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextReceiver.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.TextReceiver</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextReceiver
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextReceiver.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.TextReceiver</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextReceiver
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextReceiver.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextReceiver.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TextSender.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.TextSender</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextSender
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextSender.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.TextSender</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextSender
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextSender.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.TextSender</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextSender
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextSender.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.TextSender</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TextSender
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TextSender.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TextSender.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TrackerRemote.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.TrackerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.TrackerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.TrackerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.TrackerRemote</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemote
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemote.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemote.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_TrackerRemoteListener.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.TrackerRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.TrackerRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.TrackerRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.TrackerRemoteListener</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.TrackerRemoteListener
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_TrackerRemoteListener.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\TrackerRemoteListener.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_VRPN.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.VRPN</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPN
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPN.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.VRPN</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPN
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPN.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.VRPN</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPN
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPN.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.VRPN</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPN
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPN.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPN.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\CMakeFiles\4d3187e7d65899a12fc42497197a80d1\vrpn_VRPNDevice.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating JNI header file for vrpn.VRPNDevice</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPNDevice
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPNDevice.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating JNI header file for vrpn.VRPNDevice</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPNDevice
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPNDevice.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating JNI header file for vrpn.VRPNDevice</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPNDevice
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPNDevice.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating JNI header file for vrpn.VRPNDevice</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\Java\jdk1.8.0_171\bin\javah.exe" -d C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn -jni -classpath C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn vrpn.VRPNDevice
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/bin/CMakeFiles/4d3187e7d65899a12fc42497197a80d1/vrpn_VRPNDevice.h.rule;C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn\VRPNDevice.class;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/gitRepository/jaw-tracking/libs/vrpn -BC:/gitRepository/jaw-tracking/libs/vrpn/bin --check-stamp-file C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/gitRepository/jaw-tracking/libs/vrpn -BC:/gitRepository/jaw-tracking/libs/vrpn/bin --check-stamp-file C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/gitRepository/jaw-tracking/libs/vrpn -BC:/gitRepository/jaw-tracking/libs/vrpn/bin --check-stamp-file C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/gitRepository/jaw-tracking/libs/vrpn -BC:/gitRepository/jaw-tracking/libs/vrpn/bin --check-stamp-file C:/gitRepository/jaw-tracking/libs/vrpn/bin/java_vrpn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/gitRepository/jaw-tracking/libs/vrpn/java_vrpn/CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\java_vrpn.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AnalogOutputRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AnalogRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_AuxiliaryLoggerRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_ButtonRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_ForceDeviceRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_PoserRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TextReceiver.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TextSender.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_TrackerRemote.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_VRPNDevice.cpp" />
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\java_vrpn\vrpn_FunctionGeneratorRemote.cpp" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogOutputRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AnalogRemoteListener.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_AuxiliaryLoggerRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ButtonRemoteListener.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_ForceDeviceRemoteListener.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_FunctionGeneratorRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_PoserRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextReceiver.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TextSender.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemote.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_TrackerRemoteListener.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPN.h" />
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\vrpn_VRPNDevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\ZERO_CHECK.vcxproj">
+      <Project>{E8E35518-66C0-3FB6-9C3C-F0B427480705}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\gpsnmealib\gpsnmea.vcxproj">
+      <Project>{56035F51-6D6F-3BB4-8BE5-307A092F6103}</Project>
+      <Name>gpsnmea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\java_vrpn\java_vrpn_jar.vcxproj">
+      <Project>{6DA7FBB4-AE38-364D-899B-A0D7C85DEC0B}</Project>
+      <Name>java_vrpn_jar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\quat\quat.vcxproj">
+      <Project>{F85283C5-2BFC-33CD-9DAF-0122D46BDE7A}</Project>
+      <Name>quat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\gitRepository\jaw-tracking\libs\vrpn\bin\vrpnserver.vcxproj">
+      <Project>{3A6342EF-DD13-3D26-93DA-FCDA56CF243A}</Project>
+      <Name>vrpnserver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

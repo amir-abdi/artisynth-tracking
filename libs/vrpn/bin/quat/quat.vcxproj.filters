@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\quat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\xyzquat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\quat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gitRepository\jaw-tracking\libs\vrpn\quat\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B2F598E5-B4F5-38B2-8B28-0B18FF77C008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1D7D029-8A85-36FB-A5AF-52F8FAFE2BE2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

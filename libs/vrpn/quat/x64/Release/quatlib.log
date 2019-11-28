@@ -1,0 +1,8 @@
+﻿  matrix.c
+  quat.c
+  vector.c
+  xyzquat.c
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1369,5): warning MSB8012: TargetPath(C:\gitRepository\vrpn\x64\Release\quatlib.lib) does not match the Library's OutputFile property value (C:\gitRepository\vrpn\quat\pc_win32\Release\quat.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1371,5): warning MSB8012: TargetName(quatlib) does not match the Library's OutputFile property value (quat). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  quatlib.vcxproj -> C:\gitRepository\vrpn\x64\Release\quatlib.lib
